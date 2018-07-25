@@ -1,0 +1,396 @@
+body, html{
+    margin: 0;
+    padding:0;
+    background: #333;
+    background-image: url("../img/background.jpeg");
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    min-height: 100%;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+
+#wrapper{
+    position: relative;
+    
+}
+
+.logo{
+    color: orange;
+}
+
+#navbar {
+    bottom:680px;
+    position:fixed;
+    height: 55px;
+    min-width: 100%;
+    border-bottom: 2px solid orangered;
+    background-color:#333;
+    z-index: 1;
+}
+
+
+#navbar ul{
+    display:flex;
+    top: 20px;
+    align-items: baseline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+.logo{
+    position: relative;
+    flex:2;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin: 0;
+}
+
+ .home{
+     flex:1;
+ }
+
+ .about{
+     flex: 1;
+ }
+
+ .Portfolio{
+     flex:1
+ }
+
+ .Contact{
+     flex:1;
+ }
+
+a{
+    margin: 20px;
+}
+
+ /* unvisited link */
+a:link {
+    color:white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: orange;
+}
+
+/* selected link */
+a:active {
+    color: orange;
+}
+
+
+.text{
+    font-size: 22px;
+    color: orange;
+    margin-top: 250px;
+    text-align: center;
+    word-spacing: 5px; 
+    font-weight: lighter;
+    line-height: 1.6;
+    
+    opacity: 0.7;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.textwrapper{
+    height: 350px
+}
+
+
+#about{
+    margin-top:100px;
+    min-height: 400px;
+    min-width: 100%;
+    background-color:#333;
+}
+
+#abouttitle{
+    text-align: center;
+    padding-top: 30px;
+    flex: 2;
+}
+
+#aboutitems{
+    min-height: 200px;
+    min-width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+#mepic{
+    min-height: 200px;
+    min-width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: azure;
+    border: 1px solid black;
+    
+}
+
+.about-text{
+ margin-right: 10px;
+ min-height: 200px;
+ min-width: 100px;
+ background-color: azure;
+ flex: 1;
+}
+
+.about-text p{
+    padding-top: 30px;
+    color: black;
+    line-height: 1.5;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#portfolio{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background-color: white;
+    grid-template-columns: auto auto auto auto;
+    padding: 50px;
+}
+
+.items{
+ height: 200px;
+ border: 1px solid white;
+ background-color: #333;
+ font-size: 30px;
+ color: white;
+ text-align: center;
+}
+
+#portfolioText{
+    position: relative;
+    text-align: center;
+    color: orange;
+    margin: 0 auto;
+    
+}
+
+#portwrapper{
+    height:700px;
+    padding-top: 20px;
+    background-color: white;
+    
+}
+
+.items1:hover {
+    opacity: 0.8;
+    transition: .5s ease;
+    background-color: orange;
+  }
+
+
+#ContactText{
+padding: 0;
+margin: 0;
+text-align: center;
+color: orange;
+}
+
+.Context{
+    background-color: #333;
+    
+}
+#formwrapper{
+    background-color:#333;
+    opacity: 0.7;
+    height:400px;
+}
+
+#ContactText{
+padding-top: 20px;
+}
+
+#form{
+ display:flex;
+ flex-direction: column;
+ height: 150px;
+}
+
+form{
+    margin: 0 auto;
+}
+
+#formwrapper input  {
+margin-top:20px;
+width: 250px;
+border-radius: 3px;
+height: 20px;
+}
+
+#formwrapper textarea  {
+    margin-top:20px;
+    width: 250px;
+    height:100px;
+    border-radius: 3px;
+    }
+
+#formwrapper button  {
+    margin-top:20px;
+    height: 30px;
+    width: 70px;
+    }
+
+#footer{
+    min-height: 500px;
+    background-color: orange;
+}
+
+#iconwrap{
+position: relative;
+min-height:200px;
+}
+
+.fa-facebook{
+    font-size: 5vw;
+}
+
+.fa-twitter{
+    font-size: 5vw;
+}
+
+.fa-instagram{
+    font-size: 5vw;
+}
+
+h4{
+top: 10px;
+position: relative;
+width:20%;
+margin: 0 auto;
+height:30px;
+}
+
+#footertext{
+    text-decoration: underline;
+    height:20px;
+}
+
+#copyrighttext{
+    position: relative;
+    padding:0;
+    margin:0 auto;
+    top:240px;
+    height:20px;
+    width:30%;
+}
+
+@media only screen and (max-width: 629px) {
+    #copyrighttext{
+         top:200px;
+         
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #navbar{
+        position: initial;
+        height: 265px;
+
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .logo{
+     justify-content: flex-start;
+    }
+    
+    #aboutitems{
+     flex-direction: column;
+    }
+    
+     #about{
+
+     }
+
+     #mepic{
+      margin-bottom: 20px;   
+     }
+
+     .mepic{
+      position: relative;
+      left: 30%;  
+     }
+
+    .about-text{
+
+    }
+
+    #portfolio{
+    
+    }
+
+    .faceicon{
+        position: relative;
+        top:50px;
+        font-size: 9vw;
+        right:55%;
+    }
+    
+    .twiticon{
+        position: relative;
+        top:50px;
+        font-size: 9vw;
+        right: 40%;
+    }
+
+    .instaicon{
+        position: relative;
+        top:50px;
+        font-size: 9vw;
+        right:30%
+    }
+
+    
+
+   
+}
+
+
+@media only screen and (max-width: 590px) {
+    #copyrighttext{
+        top:250px;   
+       }
+       #footer{
+        min-height: 550px;
+         
+     }
+}
+
+@media only screen and (max-width: 489px) {
+    #copyrighttext{
+        top:170px;   
+       }
+
+}
